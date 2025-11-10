@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navegación */
+
+.navbar {
+    background-color: #66ca2c;
+    padding: 1rem 0;
+    box-shadow: 0;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.menu {
+    display:flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration:underline;
+    font-weight: 700;
+    transition: color 0.1s;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #62a194;
+}
+
+/* BANNER PRINCIPAL - HERO*/
+
+.hero {
+    background: linear-gradient(135deg, #66ca2c 0%, #79fc6d 100%);
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+.credits_section {
+    padding: 3rem 0%;
+
+}
+
+.credits_section h3 {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 2rem;
+}
+
+.credits_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.credit_card {
+    background: white;
+    border-radius: 12;
+    padding: 1.5rem;
+    box-shadow: 0 2px, rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.credit_card:hover {
+    transform: translate(-px);
+    box-shadow: 0 4px 15 rgba(30, 58, 138, 0.2);
+}
+
+.card_header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+.card_header h4 {
+    font-size: 1.3rem;
+    color: #1e3a8a;
+}
+
+.details {
+    margin-bottom: 1.5rem;
+}
+
+.detail_item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.label {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.value {
+    font-weight: 600;
+    color: #1e3a8a;
+}
+
+.highlight {
+    color: #10b981;
+    font-size: 1.1rem;
+}
+
+.btn_primary {
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn_primary:hover {
+    background-color: #2563eb;
+}
+
+
+
+/* === SECCIONES DE SIMULADOR Y SOLICITAR CRÉDITO === */
+
+.page_section {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+
+.page_section h2, 
+.page_section h3 {
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Formulario de filtros o solicitud */
+.form_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.form_group label {
+    font-weight: 600;
+    color: #374151;
+}
+
+.form_group input,
+.form_group select,
+.form_group textarea {
+    padding: 0.7rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form_group input:focus,
+.form_group select:focus,
+.form_group textarea:focus {
+    border-color: #3b82f6;
+    outline: none;
+}
+
+.btn_secondary {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn_secondary:hover {
+    background-color: #059669;
+}
+
+/* Tarjetas de productos (en simulador) */
+.credit_item {
+    background-color: #f9fafb;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e5e7eb;
+}
+
+.credit_item h4 {
+    color: #2563eb;
+    margin-bottom: 0.3rem;
+}
+
+.credit_item p {
+    font-size: 0.95rem;
+    color: #374151;
+}
+
+/* Para que los títulos del menú se vean consistentes */
+.navbar a {
+    text-decoration: none;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreditSmart | Solicitud de Crédito</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">💳 CreditSmart</h1>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="search.html">Simulador</a></li>
+        <li><a href="solicitud_credito.html" class="active">Solicitar crédito</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Banner principal -->
+  <section class="hero">
+    <h2>Solicitud de Crédito</h2>
+    <p>Completa el siguiente formulario para iniciar tu solicitud de crédito fácilmente.</p>
+  </section>
+
+  <!-- Contenido principal -->
+  <main class="container credits_section">
+    <h3>Formulario de Solicitud</h3>
+
+    <div class="credit_card">
+      <form>
+        <!-- Datos personales -->
+        <div class="details">
+          <h4 style="color:#1e3a8a; margin-bottom:1rem;">Datos personales</h4>
+
+          <div class="detail_item">
+            <label class="label">Nombre completo:</label>
+            <input type="text" class="input_field" placeholder="Escribe tu nombre completo" required>
+          </div>
+
+          <div class="detail_item">
+            <label class="label">Cédula:</label>
+            <input type="number" class="input_field" placeholder="Tu número de identificación" required>
+          </div>
+
+          <div class="detail_item">
+            <label class="label">Correo electrónico:</label>
+            <input type="email" class="input_field" placeholder="ejemplo@correo.com" required>
+          </div>
+
+          <div class="detail_item">
+            <label class="label">Teléfono:</label>
+            <input type="tel" class="input_field" placeholder="Número de contacto" required>
+          </div>
+        </div>
+
+        <!-- Datos del crédito -->
+        <div class="details">
+          <h4 style="color:#1e3a8a; margin-bottom:1rem;">Detalles del crédito</h4>
+
+          <div class="detail_item">
+            <label class="label">Tipo de crédito:</label>
+            <select class="input_field" required>
+              <option value="">Selecciona una opción</option>
+              <option value="libre_inversion">Libre inversión</option>
+              <option value="vehiculo">Vehículo</option>
+              <option value="vivienda">Vivienda</option>
+              <option value="educacion">Educación</option>
+            </select>
+          </div>
+
+          <div class="detail_item">
+            <label class="label">Monto solicitado:</label>
+            <input type="number" class="input_field" placeholder="Ejemplo: 5000000" required>
+          </div>
+
+          <div class="detail_item">
+            <label class="label">Plazo (meses):</label>
+            <input type="number" class="input_field" placeholder="Ejemplo: 24" required>
+          </div>
+        </div>
+
+        <!-- Enviar formulario -->
+        <button type="submit" class="btn_primary">Enviar solicitud</button>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>
